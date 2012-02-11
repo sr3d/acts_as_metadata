@@ -41,10 +41,3 @@ end
 class Story < ActiveRecord::Base
   acts_as_metadata :meta => [ 'reading', 'current_page' ]
 end
-
-# Purely useful for test cases...
-class ModelMeta < ActiveRecord::Base
-  self.table_name = :model_metas
-  # acts_as_metadata :meta => [ 'reading', 'current_page' ]
-end
-
